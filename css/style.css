@@ -1,3 +1,186 @@
+/* Navbar Modern Style */
+.main-navbar {
+    background: #18191a;
+    transition: background 0.3s;
+    border-bottom: 2px solid #ffc10722;
+}
+.main-navbar .navbar-brand {
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+}
+.main-navbar .logo-icon {
+    box-shadow: 0 2px 8px rgba(255,193,7,0.13);
+}
+.main-navbar .brand-text {
+    font-weight: 700;
+    font-size: 1.1em;
+}
+/* الروابط الافتراضية */
+.main-navbar .nav-link {
+    color: #f7f7f7 !important;
+    font-weight: 600;
+    margin: 0 2px;
+    letter-spacing: 0.5px;
+    transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+    text-shadow: 0 1px 2px #0005;
+}
+/* الروابط عند التفعيل أو الهوفر */
+/* التاب النشطة أو الهوفر في الوضع العادي */
+.main-navbar .nav-link.active, .main-navbar .nav-link:hover {
+    background: #ffc107 !important;
+    color: #23272b !important;
+    text-shadow: 0 1px 2px #fff8,0 0 1px #ffc107;
+    box-shadow: 0 2px 8px #ffc10733;
+}
+/* التاب النشطة أو الهوفر في الدارك مود */
+body.dark-mode .main-navbar .nav-link.active, body.dark-mode .main-navbar .nav-link:hover {
+    background: #ffc107 !important;
+    color: #18191a !important;
+    text-shadow: 0 1px 2px #fff8,0 0 1px #ffc107;
+    box-shadow: 0 2px 8px #ffc10733;
+}
+/* الروابط في الدارك مود */
+body.dark-mode .main-navbar {
+    background: #23272b !important;
+    border-bottom: 2px solid #ffc10733;
+}
+body.dark-mode .main-navbar .nav-link {
+    color: #f1f1f1 !important;
+    text-shadow: 0 1px 2px #000a;
+}
+body.dark-mode .main-navbar .nav-link.active, body.dark-mode .main-navbar .nav-link:hover {
+    background: #ffc107 !important;
+    color: #18191a !important;
+    text-shadow: 0 1px 2px #fff8,0 0 1px #ffc107;
+    box-shadow: 0 2px 8px #ffc10733;
+}
+/* الروابط في اللغات من اليسار لليمين */
+html[dir="ltr"] .main-navbar .nav-link {
+    text-align: left;
+}
+html[dir="rtl"] .main-navbar .nav-link {
+    text-align: right;
+}
+body.dark-mode .main-navbar .nav-link.active, body.dark-mode .main-navbar .nav-link:hover {
+    background: #ffc107 !important;
+    color: #18191a !important;
+    text-shadow: none;
+}
+body.dark-mode .main-navbar .nav-link {
+    color: #f1f1f1 !important;
+}
+body.dark-mode .main-navbar .nav-link.active, body.dark-mode .main-navbar .nav-link:hover {
+    background: #ffc107 !important;
+    color: #18191a !important;
+    text-shadow: none;
+}
+.main-navbar .btn {
+    font-weight: 500;
+    border-width: 2px;
+    transition: background 0.2s, color 0.2s, border 0.2s;
+}
+.main-navbar .btn-outline-warning {
+    border-color: #ffc107;
+    color: #fcfcfc;
+}
+.main-navbar .btn-outline-warning:hover {
+    background: #ffc107;
+    color: #18191a;
+}
+.main-navbar .btn-outline-light {
+    border-color: #fff;
+    color: #fff;
+}
+.main-navbar .btn-outline-light:hover {
+    background: #fff;
+    color: #18191a;
+}
+@media (max-width: 991px) {
+    .main-navbar .navbar-nav {
+        gap: 0 !important;
+    }
+    .main-navbar .nav-link, .main-navbar .btn {
+        margin-bottom: 6px;
+    }
+}
+body.dark-mode .main-navbar {
+    background: #23272b !important;
+}
+body.dark-mode .main-navbar .nav-link.active, body.dark-mode .main-navbar .nav-link:hover {
+    background: #ffc107 !important;
+    color: #23272b !important;
+}
+/* Dark Mode & Contrast */
+body.dark-mode {
+    background: #18191a !important;
+    color: #f1f1f1 !important;
+}
+body.dark-mode .navbar, body.dark-mode .footer {
+    background: #23272b !important;
+    color: #fff !important;
+}
+body.dark-mode .bg-light, body.dark-mode .shadow-sm, body.dark-mode .form-control, body.dark-mode .input-group-text {
+    background: #23272b !important;
+    color: #f1f1f1 !important;
+    border-color: #333 !important;
+}
+body.dark-mode .form-control::placeholder {
+    color: #bbb !important;
+}
+body.dark-mode .btn,
+body.dark-mode .btn-social {
+    background: #222 !important;
+    color: #ffc107 !important;
+    border-color: #ffc107 !important;
+}
+body.dark-mode .btn:hover,
+body.dark-mode .btn-social:hover {
+    background: #ffc107 !important;
+    color: #222 !important;
+}
+body.dark-mode .input-group-text {
+    background: #333 !important;
+    color: #ffc107 !important;
+}
+body.dark-mode .navbar-nav .nav-link.active {
+    color: #ffc107 !important;
+}
+body.dark-mode h1, body.dark-mode h2, body.dark-mode h3, body.dark-mode h4, body.dark-mode h5, body.dark-mode h6 {
+    color: #ffc107 !important;
+}
+/* تحسين مظهر فورم التواصل */
+.btn-social {
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3rem;
+    transition: background 0.3s, color 0.3s, box-shadow 0.3s;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+}
+.btn-social:hover {
+    background: #ffc107 !important;
+    color: #fff !important;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.13);
+}
+.input-group-text {
+    border-radius: 8px 0 0 8px;
+    border: none;
+}
+.form-control {
+    border-radius: 0 8px 8px 0;
+    border: 1px solid #eee;
+    box-shadow: none;
+}
+.form-control:focus {
+    border-color: #ffc107;
+    box-shadow: 0 0 5px rgba(255, 193, 7, 0.2);
+}
+.shadow-sm {
+    box-shadow: 0 2px 16px rgba(0,0,0,0.07) !important;
+}
 body {
     font-family: 'Poppins', sans-serif;
 }

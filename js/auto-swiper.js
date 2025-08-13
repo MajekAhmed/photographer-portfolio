@@ -8,7 +8,13 @@ fetch('images/gallery/gallery.json')
     images.forEach((img, i) => {
       const slide = document.createElement('div');
       slide.className = 'swiper-slide';
-      slide.innerHTML = `<img src="images/gallery/${img}" alt="صورة ${i+1}">`;
+      const image = document.createElement('img');
+      image.src = `images/gallery/${img}`;
+      image.alt = `صورة ${i+1}`;
+      image.loading = 'eager';
+      image.style.opacity = '0';
+      image.onload = () => { image.style.transition = 'opacity 0.5s'; image.style.opacity = '1'; };
+      slide.appendChild(image);
       swiperWrapper.appendChild(slide);
     });
     if (window.Swiper) {
