@@ -32,3 +32,22 @@ img:hover {
     padding: 20px 0;
     text-align: center;
 }
+/* تحسين مظهر الصور في الجاليري */
+section.bg-light img {
+    transition: transform 0.3s ease;
+}
+section.bg-light img:hover {
+    transform: scale(1.05);
+}
+/* تحسين مظهر الأزرار */
+.btn {
+    transition: background-color 0.3s, color 0.3s;
+}
+.btn:hover {
+    background-color: #ffc107;
+    color: #fff;
+}
+/* تحسين مظهر النماذج */
+.form-control {
+    transition: border-color 0.3s;
+}

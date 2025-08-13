@@ -4,13 +4,23 @@
 [![CSS3](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white)]()
 [![Bootstrap](https://img.shields.io/badge/Bootstrap_5-7952B3?logo=bootstrap&logoColor=white)]()
 [![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black)]()
-[![Lightbox2](https://img.shields.io/badge/Lightbox2-000000?logo=images&logoColor=white)]()
+
+[![GLightbox](https://img.shields.io/badge/GLightbox-222222?logo=google-photos&logoColor=white)]()
+[![SwiperJS](https://img.shields.io/badge/SwiperJS-6332F6?logo=swiper&logoColor=white)]()
+[![Masonry%20CSS](https://img.shields.io/badge/Masonry%20CSS-00B8D9?logo=css3&logoColor=white)]()
+[![Auto%20Gallery%20(JSON)](https://img.shields.io/badge/Auto%20Gallery-FFD600?logo=json&logoColor=black)]()
 [![Responsive Design](https://img.shields.io/badge/Responsive%20Design-00C853?logo=responsiveness&logoColor=white)]()
 
 ---
 
-موقع برتفوليو احترافي لمصور فوتوغرافي، يعرض فيه أعماله وصوره بشكل منظم وجذاب، مع تعريف شخصي به، وطريقة للتواصل.  
-الموقع مصمم باستخدام **Bootstrap 5** لضمان الاستجابة الكاملة على جميع الأجهزة، مع لمسات جمالية مخصصة بـ CSS.
+موقع برتفوليو احترافي لمصور فوتوغرافي، يعرض فيه أعماله وصوره بشكل منظم وجذاب، مع تعريف شخصي به، وطريقة للتواصل.
+
+**آخر التطورات:**
+
+- تم إضافة نظام جاليري تلقائي: أي صورة تضعها في مجلد `images/gallery` تظهر مباشرة في الموقع.
+- استخدام GLightbox لعرض الصور بشكل احترافي.
+- عرض الصور بنمط Pinterest (Masonry CSS) بدون مكتبات جافاسكريبت ثقيلة.
+- سلايدر احترافي للأعمال المميزة باستخدام SwiperJS.
 
 ---
 
@@ -34,13 +44,16 @@
 
 ---
 
-## 🛠️ التقنيات المستخدمة
+## 🛠️ الأدوات والتقنيات المستخدمة
 
 - **HTML5**
 - **CSS3 + Bootstrap 5**
-- **JavaScript (Lightbox Plugin)**
+- **JavaScript**
+- **GLightbox** لعرض الصور بالحجم الكامل
+- **SwiperJS** للسلايدر
+- **Masonry CSS** لنمط Pinterest
+- **نظام جاليري تلقائي (JSON + JS)**
 - **Google Fonts**
-- **Lightbox2** لعرض الصور بالحجم الكامل.
 
 ---
 
